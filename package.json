@@ -1,0 +1,50 @@
+{
+  "name": "z1-1",
+  "version": "1.0.0",
+  "description": "**MailMind Assistant** 是一款基于AI的智能邮件生产力工具，通过自动化邮件起草、智能优先级排序和内容摘要，显著提升职场人士的邮件处理效率。本产品由Zulu智能体驱动，结合百度文心大模型的强大语义理解能力，为用户提供更智能、更高效的邮件管理体验。",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:simple": "node scripts/build-simple.js",
+    "preview": "vite preview",
+    "lint": "eslint src --ext ts,tsx",
+    "lint:fix": "eslint src --ext ts,tsx --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
+    "type-check": "tsc --noEmit",
+    "test": "vitest",
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest",
+    "test:unit:coverage": "vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanxuefengyan/z1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanxuefengyan/z1/issues"
+  },
+  "homepage": "https://github.com/yanxuefengyan/z1#readme",
+  "dependencies": {
+    "@types/react": "^19.2.6",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "prettier": "^3.6.2",
+    "vite": "^7.2.4",
+    "vitest": "^4.0.13"
+  }
+}

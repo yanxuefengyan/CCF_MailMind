@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MailMind Assistant</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 380px;
+      min-height: 500px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f7f9fc;
+    }
+    
+    .header {
+      background-color: #1890ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .header h1 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+    
+    .subtitle {
+      font-size: 13px;
+      opacity: 0.9;
+    }
+    
+    .main {
+      padding: 20px;
+    }
+    
+    .status-section {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .status-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #52c41a;
+    }
+    
+    .features-section {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .features-section h2 {
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: #1890ff;
+    }
+    
+    .feature-list {
+      list-style: none;
+    }
+    
+    .feature-list li {
+      padding: 10px;
+      margin-bottom: 8px;
+      background-color: #f0f7ff;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    
+    .actions-section {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    
+    .button {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .button.primary {
+      background-color: #1890ff;
+      color: white;
+    }
+    
+    .button.primary:hover {
+      background-color: #40a9ff;
+    }
+    
+    .button.secondary {
+      background-color: #f0f7ff;
+      color: #1890ff;
+      border: 1px solid #d6e4ff;
+    }
+    
+    .button.secondary:hover {
+      background-color: #e6f7ff;
+    }
+    
+    .footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+      color: #666;
+      background-color: #f0f7ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>MailMind Assistant</h1>
+    <p class="subtitle">智能邮件效率助手</p>
+  </div>
+  
+  <div class="main">
+    <div class="status-section">
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span>扩展已准备就绪</span>
+      </div>
+    </div>
+    
+    <div class="features-section">
+      <h2>核心功能</h2>
+      <ul class="feature-list">
+        <li>📝 智能邮件起草</li>
+        <li>📊 邮件内容分析</li>
+        <li>🏷️ 智能分类与优先级</li>
+        <li>✨ 语言优化建议</li>
+      </ul>
+    </div>
+    
+    <div class="actions-section">
+      <button class="button primary" id="openGmail">打开 Gmail</button>
+      <button class="button secondary" id="openOutlook">打开 Outlook</button>
+    </div>
+    
+    <div class="features-section">
+      <h2>使用说明</h2>
+      <p style="font-size: 13px; line-height: 1.6; color: #666;">
+        1. 打开Gmail或Outlook网页版<br>
+        2. 在撰写邮件时，点击🤖智能助手按钮<br>
+        3. 选择需要的功能即可使用
+      </p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>由 Zulu智能体 + 百度文心大模型 提供技术支持</p>
+    <p style="margin-top: 5px;">版本 1.0.0</p>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
